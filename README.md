@@ -1,4 +1,5 @@
 # MMFNet
+[![Paper](https://img.shields.io/badge/Paper-View_PDF-red)](https://users.cs.fiu.edu/~msha/publications/sac26.pdf)
 
 Welcome to the official repository of the MMFNet paper: "**MMFNet: Multi-Scale Frequency Masking Neural Network for Multivariate Time Series Forecasting**"
 
