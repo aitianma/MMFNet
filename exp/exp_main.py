@@ -389,12 +389,11 @@ class Exp_Main(Exp_Basic):
 
         mae, mse, rmse, mape, mspe, rse, corr = metric(preds, trues)
         print('mse:{}, mae:{}, rse:{}'.format(mse, mae, rse))
-        f = open("result.txt", 'a')
-        f.write(setting + "  \n")
-        f.write('mse:{}, mae:{}, rse:{}'.format(mse, mae, rse))
-        f.write('\n')
-        f.write('\n')
-        f.close()
+        with open("result.txt", 'a') as f:
+            f.write(setting + "  \n")
+            f.write('mse:{}, mae:{}, rse:{}'.format(mse, mae, rse))
+            f.write('\n')
+            f.write('\n')
 
         # np.save(folder_path + 'metrics.npy', np.array([mae, mse, rmse, mape, mspe,rse, corr]))
         # np.save(folder_path + 'pred.npy', preds)
